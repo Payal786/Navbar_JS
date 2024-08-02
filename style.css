@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+.nav{
+    display: flex ;
+    justify-content: space-between;
+    background-color: rgb(117, 127, 212);
+    height: 6rem;
+
+ }
+.imge{
+    padding: 2rem;
+ }
+#twitter{
+    color: rgb(66, 196, 219);
+}
+#facebook{
+    color: blue;
+}
+#google{
+    color: orange;
+}
+#instagram{
+    color: rgb(250, 48, 108);
+}
+#github{
+    color: black;
+}
+.list{
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 150%;
+    padding: 2rem;
+ }
+.menu:hover{
+    color: rgb(18, 24, 204);
+}
+.fa-bars{ 
+    margin-right: 3rem;
+    margin-top: 1.2rem;
+    visibility: hidden;
+ }
+.logo{
+    display: flex;
+    gap: 1.6rem;
+    list-style-type: none;
+    font-size: 180%;
+    padding: 2rem;
+ }
+i{
+    color: skyblue;
+ }
+
+ @media(max-width: 768px){
+    .list{
+        visibility: hidden;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 2.5rem;
+        right: -1.99rem;
+        padding: 1rem;
+    }
+    .list li{
+        margin-right: 3rem;
+    }
+    .list.active{
+        visibility: visible;
+    }
+    .fa-bars{
+        visibility: visible;
+    }
+    .fa-bars:hover{
+        color: skyblue;    
+    }
+    .logo{
+        visibility: hidden;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 2.5rem;
+        right: -1.99rem;
+        padding: 1rem;
+    }
+ }
+
+ 
